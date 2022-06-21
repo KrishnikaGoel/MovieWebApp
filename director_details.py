@@ -1,6 +1,6 @@
-import mainmenu2
-import moviedetails
-import budget
+#import mainmenu2
+#import moviedetails
+#import budget
 import mysql.connector as co
 def BOL_MENU():
     while True:

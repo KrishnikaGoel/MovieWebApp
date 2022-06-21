@@ -1,6 +1,6 @@
-import mainmenu2
-import director_details
-import budget
+#import mainmenu2
+#import director_details
+#import budget
 import mysql.connector as co
 def MOVIEDETAILS_MENU():
     while True:
@@ -57,7 +57,7 @@ def movi_details():
 def show_movi_details():
     mycon=co.connect(user="root", password="mysql", host="localhost", database="projcet")
     cursor=mycon.cursor()
-    cursor.execute("select *from moviedetails")
+    cursor.execute("select * from moviedetails")
     data=cursor.fetchall()
     for row in data:
          print(row)
@@ -66,7 +66,7 @@ def search_movi_details():
     mycon=co.connect(user="root", password="mysql", host="localhost", database="projcet")
     cursor=mycon.cursor()
     ac=input("Enter Movie Name : ")
-    st="select *from movie details where name='%s"%(ac)
+    st="select * from movie details where name='%s"%(ac)
     cursor.execute(st)
     data=cursor.fetchall()
     print(data)
@@ -75,7 +75,7 @@ def delete_movi_details():
     mycon=co.connect(user="root", password="mysql", host="localhost", database="projcet")
     cursor=mycon.cursor()
     ac=input("Enter Movie Name : ")
-    st="delete *from movie details where name='%s"%(ac)
+    st="delete * from movie details where name='%s"%(ac)
     cursor.execute(st) 
     mycon.commit()
     print("Data deleted successfully")
@@ -108,7 +108,7 @@ def edit_movi_details():
         return
     else:
         print("Error : Invalid choice, try again...")
-        conti="press any key to continue"
+#        conti="press any key to continue"
 
 def edit_name():
     mycon=co.connect(user="root", password="mysql", host="localhost", database="projcet")
