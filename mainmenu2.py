@@ -1,3 +1,4 @@
+#%%
 import moviedetails
 import director_details
 import budget 
@@ -29,3 +30,4 @@ while True:
     else:
         print("Error : Please select a number from 1 to 4")
         conti=input("Press any key to continue")
+# %%

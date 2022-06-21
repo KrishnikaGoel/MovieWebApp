@@ -1,8 +1,8 @@
-import mainmenu2
+#import mainmenu2
 import budget
-import director_details
-import budget 
+#import director_details 
 import mysql.connector as co
+
 def EVE_MENU():
     while True:
         #MODULE : BUDGET
@@ -199,3 +199,4 @@ def edit_earnings():
     cursor.execute(st) 
     mycon.commit()
     print("data successfully updated")
+# %%
